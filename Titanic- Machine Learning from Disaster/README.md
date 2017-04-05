@@ -1,8 +1,11 @@
-# Predictive Analysis of Survival Rate on Titanic
+Predictive Analysis of Survival Rate on Titanic
+===============================================
 
-This is a predictive machine learning project using `R` and `Random Forest Algorithm`, based on Kaggle competition: [Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic)
+This is a predictive machine learning project using ```R``` based on Kaggle competition: [Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic). 
 
-## Content
+To see original Kaggle post, please click [here](https://www.kaggle.com/beiqiwang/titanic/predictive-analysis-of-survival-rate-on-titanic/).
+----------
+**Content**
 
 1. Introduction
 
@@ -12,11 +15,9 @@ This is a predictive machine learning project using `R` and `Random Forest Algor
 
 2. Data Preparation and Exploratory Analysis
 
-      2.1 Statistical Summaries
+      2.1 Data Cleaning
 
-      2.2 Missing Data Imputation
-
-      2.3 Exploratory Analysis
+      2.2 Exploratory Analysis and Data Processing
 
 3. Modeling
 
@@ -24,9 +25,11 @@ This is a predictive machine learning project using `R` and `Random Forest Algor
 
       3.2 Model Training
 
-      3.3 Model Evaluation
+      3.3 Model  Evaluation
 
-4. Conclusion
+4. Prediction
+
+----------
 
 ## 1. Introduction
 
@@ -82,17 +85,5 @@ Parent = mother, father
 Child = daughter, son, stepdaughter, stepson
 Some children travelled only with a nanny, therefore parch=0 for them.
 
-## 2. Data Preparation and Exploratory Analysis
 
-Import library and load the data.
-```{r}
-library('dplyr') # data manipulation
-library('ggplot2') # Data Visualization
-
-train <- read.csv('train.csv')
-test <- read.csv('test.csv')
-full <- rbind(train[,-2],test)
-```
-
-### 2.1 Statistical Summaries
 
